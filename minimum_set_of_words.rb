@@ -27,6 +27,10 @@ def without_words_not_contributing_to_letter_set(words, new_word)
   end
 end
 
+# This is recursive function. Given I know the `minimum_set_of_words(input)` then
+# I am in position to calculate the `minimum_set_of_words(input + new_word)`, using
+# the logic described in the README.md file
+#
 def minimum_set_of_words(input)
   return [] if input.nil? || input.size == 0
   return input if input.size == 1
